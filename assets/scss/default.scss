@@ -1,0 +1,191 @@
+@media screen and (min-width: $xs) {
+  @import url('https://fonts.googleapis.com/css?family=Nunito:200,400,700,900');
+  body{
+    font-family: $font;
+    font-weight: 200;
+  }
+  nav{
+    position: absolute!important;
+    width: 100%;
+    z-index: 999;
+    height: auto;
+    transition: .5s;
+    font-size: 24px;
+    .show{
+      height: 100vh;
+      transition: .3s;
+    }
+  }
+  .navbar-toggler{
+    border: 0;
+    &:focus{
+      outline: 0px dotted;
+      outline: 0px auto -webkit-focus-ring-color;
+    }
+    .one{
+      height: 3px;
+      background: white;
+      width: 30px;
+      transform: rotate(45deg);
+      transition: .5s;
+      margin: 0;
+    }
+    .tree{
+      height: 3px;
+      background: white;
+      width: 30px;
+      transform: rotate(135deg);
+      transition: .5s;
+      margin: -3px 0;
+    }
+  }
+  .collapsed{
+    .one {
+      height: 3px;
+      background: white;
+      width: 30px;
+      margin-bottom: 5px;
+      transform: none;
+    } 
+    .tree{
+      height: 3px;
+      background: white;
+      width: 30px;
+      margin-bottom: 5px;
+      transform: none;
+    }
+  }
+  .upper{
+    text-transform: uppercase;
+  }
+  .bold{
+    font-weight: 700;
+  }
+  .black{
+    font-weight: 900;
+  }
+  h1{
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 200;
+  }
+  h2{
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  p{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .shape{
+    background: url(../images/wave-shape-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: center 100.1%;
+  }
+  header{
+    padding: 32px 0 128px 0;
+    img{
+      margin: 64px 0px -20px 0px;
+    }
+  }
+  #respiramos{
+    padding: 32px 0 64px 0;
+    img{
+      margin: 32px 0;
+    }
+  }
+  #conheca{
+    padding: 64px 0 128px 0;
+    img{
+      margin: 16px 0;
+    }
+    button{
+      padding: 16px 32px;
+      transition: $transition;
+      &:hover{
+        background: $red!important;
+        color: $white!important;
+      }
+    }
+  }
+  #anos{
+    padding: 64px 0;
+    img{
+      margin-bottom: 36px;
+    }
+  }
+  footer{
+    padding: 12px 0;
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: $sm) {
+  .shape{
+    background: url(../images/wave-shape-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center 100.5%;
+  }
+}
+
+@media screen and (min-width: $md) {
+}
+@media screen and (min-width: $lg) {
+  nav{
+    position: relative!important;
+    width: 100%;
+    z-index: 999;
+    height: auto;
+    transition: .5s;
+    font-size: 16px;
+    .show{
+      height: auto;
+      transition: .3s;
+    }
+  }
+  h2{
+    line-height: 80px;
+  }
+  nav{
+    .nav-item{
+      border-bottom: 1px solid transparent;
+      .hover{
+        width: 0px;
+        height: 1px;
+        background: white;
+        margin-top: -5px;
+        transition: .5s;
+      }
+      &:hover{
+        .hover{
+          width: 50px;
+        }
+      }
+    }
+  }
+  .shape{
+    background: url(../images/wave-shape-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center 100.5%;
+  }
+  #header{
+    h2{
+      line-height: 50px;
+    }
+  }
+  #respiramos{
+    padding: 104px 0;
+  }
+  #conheca{
+    padding: 104px 0 200px 0;
+  }
+  #anos{
+    padding: 104px 0;
+  }
+}
+@media screen and (min-width: $xl) {
+}

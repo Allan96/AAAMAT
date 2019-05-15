@@ -1,0 +1,2 @@
+console.log("Site desenvolvido por Allan Souza https://fb.com/ASDSAllan");
+$(".btn-scrool").click(function(o){o.preventDefault();var t=$(this).attr("href"),l=($("nav").innerHeight(),$(t).offset().top);$("html, body").animate({scrollTop:l},1500)});
