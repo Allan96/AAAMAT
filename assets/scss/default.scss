@@ -4,6 +4,12 @@
     font-family: $font;
     font-weight: 200;
   }
+  .carousel{
+    width: 100%!important;
+  }
+  .flickity-page-dots .dot {
+    background: #ff4e4e;
+}
   nav{
     position: absolute!important;
     width: 100%;
@@ -79,6 +85,46 @@
     font-size: 16px;
     line-height: 22px;
   }
+  .card{
+    border: 0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-bottom: 24px;
+    transition: .5s;
+    cursor: pointer;
+    span{
+      position: relative;
+      float: right;
+      transition: .5s;
+      img{
+        transition: .5s;
+        margin-left: 10px;
+      }
+    }
+    h3{
+      font-size: 20px;
+    }
+    .card-img{
+      height: 150px;
+      background: #C4C4C4;
+      border-radius: 0;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .card-text{
+      padding: 16px;
+    }
+    &:hover{
+      box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+      span{
+        img{
+           margin-right: -5px;
+           margin-left: 15px;
+        }
+       
+      }
+    }
+  }
   .shape{
     background: url(../images/wave-shape-hero.svg);
     background-repeat: no-repeat;
@@ -116,6 +162,22 @@
     img{
       margin-bottom: 36px;
     }
+  }
+  #conhecam{
+    padding: 64px 0 200px 0;
+  }
+  #portalnoticias{
+    padding: 64px 0;
+  }
+  #gestaointerna{
+    padding: 64px 0;
+    h3{
+      font-size: 24px;
+      font-weight: 200;
+    }
+  }
+  #campeonatos{
+    padding: 80px 0;
   }
   footer{
     padding: 12px 0;
